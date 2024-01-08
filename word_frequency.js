@@ -40,11 +40,11 @@ function printWordFreq(file, callback) {
     // TODO: write code to count the words in the file
 
     const wordCount = data
-      .replace(/[.,'\/#!$%\^&\*;:{}=\-_`~()]/g, "")
+      // .replace(/[.,'\/#!$%\^&\*;:{}=\-_`~()]/g, "")
       .toLowerCase()
-      .split(/\W+/);
-    // .sort();
-    const frequency = [];
+      .split(/\W+/)
+      .sort();
+    const frequency = {};
 
     for (const word of wordCount) {
       if (STOP_WORDS.includes(word)) {
