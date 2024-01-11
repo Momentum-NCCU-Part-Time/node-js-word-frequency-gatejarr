@@ -57,7 +57,7 @@ function printWordFreq(file, callback) {
         frequency[word] = 1;
       }
     }
-    // console.log("Initial data read from file: ", data);
+    console.log("Initial data read from file: ", data);
     callback(frequency);
   });
 }
